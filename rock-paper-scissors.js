@@ -43,8 +43,24 @@ function playGame() {
      } else {
          console.log("Computer wins!");
      }
+
+     function rounds() {
+        for (var i = 0; i < 5; i++) {
+        if (computerChoice === "Computer wins!") {
+        return("Your score is" + " " + i);
+      }
+        else if (userChoice === "You win!") {
+            return("Your score is" + " " + i);
+        }
+        else (i === 5) 
+        return (i)
+            break;
+        }
+        console.log(rounds())
     }
- 
+}
+    
+
  // Call the function to play the game
  playGame();
 
