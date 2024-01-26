@@ -7,26 +7,18 @@
 
     /*
     my problem is-
-    when checking if prompt input is rock paper or scissors, 
-    the check also allows any character within the strings rock paper or scissors,
-    how can i make sure prompt ONLY accepts the entire string 
+    when checking if prompt input is rock 
     */
 
     // Get user's choice
     let userChoice = prompt("Choose Rock, Paper, or Scissors").toLowerCase();
 
-      if (userChoice === choiceOne || userChoice === choiceTwo || userChoice === choiceThree ) {
+    if (userChoice === choiceOne || userChoice === choiceTwo || userChoice === choiceThree ) {
         console.log(true);
       }
       else {
         console.log("Please enter Rock, Paper, or Scissors")
       }
-
-      do {
-        prompt(userChoice)
-      }
-      while(userChoice !== choiceOne);
-      
 
    
 
@@ -40,6 +32,7 @@
 
 /*
 
+ 
 
 let pattern = /^["Rock", "Paper", "Scissors"]/;
 
