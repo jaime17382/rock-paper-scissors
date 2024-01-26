@@ -1,10 +1,9 @@
 /*function playGame() {
     // Array of possible moves
     const moves = ["rock", "paper", "scissors"]; */
-    let rock = "rock";
-    let paper = "paper";
-    let scissors = "scissors";
-    let choice = [rock, paper, scissors];
+    let choiceOne = "rock";
+    let choiceTwo = "paper";
+    let choiceThree = "scissors";
 
     /*
     my problem is-
@@ -16,12 +15,18 @@
     // Get user's choice
     let userChoice = prompt("Choose Rock, Paper, or Scissors").toLowerCase();
 
-      if (userChoice = choice) {
+      if (userChoice === choiceOne || userChoice === choiceTwo || userChoice === choiceThree ) {
         console.log(true);
       }
       else {
         console.log("Please enter Rock, Paper, or Scissors")
       }
+
+      do {
+        prompt(userChoice)
+      }
+      while(userChoice !== choiceOne);
+      
 
    
 
@@ -34,30 +39,6 @@
 
 
 /*
-
-  // Computer randomly selects a move
-    const computerChoice = moves[Math.floor(Math.random() * moves.length)];
-
-    // Display choices
-    console.log("You chose: " + userChoice);
-    console.log("Computer chose: " + computerChoice);
-
-    // Determine the winner
-    if (userChoice === computerChoice) {
-        console.log("It's a tie!");
-    } else if (
-        (userChoice === "rock" && computerChoice === "scissors") ||
-        (userChoice === "paper" && computerChoice === "rock") ||
-        (userChoice === "scissors" && computerChoice === "paper")
-    ) {
-        console.log("You win!");
-    } else {
-        console.log("Computer wins!");
-    }
-}
-
-// Call the function to play the game
-playGame();
 
 
 let pattern = /^["Rock", "Paper", "Scissors"]/;
