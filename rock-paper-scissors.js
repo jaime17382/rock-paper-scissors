@@ -1,5 +1,5 @@
 function playGame() {
-    // Array of possible moves
+// Array of possible moves
     let moves = ["rock", "paper", "scissors"]; 
 
      // Computer randomly selects a move
@@ -16,6 +16,7 @@ function playGame() {
     how can i make sure prompt ONLY accepts the entire string 
     */
 
+    
     // Get user's choice
     let userChoice = prompt("Choose Rock, Paper, or Scissors").toLowerCase();
 
@@ -26,7 +27,7 @@ function playGame() {
         console.log("Please enter Rock, Paper, or Scissors")
       }
 
-
+    
      // Display choices
      console.log("You chose: " + userChoice);
      console.log("Computer chose: " + computerChoice);
@@ -43,75 +44,33 @@ function playGame() {
      } else {
          console.log("Computer wins!");
      }
-
-     function rounds() {
-        for (var i = 0; i < 5; i++) {
-        if (computerChoice === "Computer wins!") {
-        return("Your score is" + " " + i);
-      }
-        else if (userChoice === "You win!") {
-            return("Your score is" + " " + i);
-        }
-        else (i === 5) 
-        return (i)
-            break;
-        }
-        console.log(rounds())
     }
-}
     
+ 
 
+   
+     /* 
+     start simple- 
+     write counter function
+
+     use score counter for each player
+     */
+
+
+     let score = 1; prompt("Do you want to continue the game?");
+       while (score <= 5 && score != "No") {
+       console.log(score);
+       score++;
  // Call the function to play the game
- playGame();
+       playGame();
+      }
+ 
+
+ 
+ 
 
   
 
 
 
   
-
-
-
-/*
-
-let pattern = /^["Rock", "Paper", "Scissors"]/;
-
-function getComputerChoice() {
-    let game = ["rock", "paper", "scissors"];
-    let random = Math.floor(Math.random() * game.length);
-    return game [random];
-   }
-
-
-
-   function roundOne(playerSelection, computerSelection) {
-        if (playerSelection = "rock", computerSelection = "rock") {
-            return("HI");
-        }
-        else if (playerSelection = "rock", computerSelection = "scissors"){
-            return("not HI");
-        }
-        else if(playerSelection = "rock", computerSelection = "rock") {
-            return("not HI again!");
-        }
-}
-
-
-function getPlayerChoice() {
-   let playerSelectionOptions = prompt("Rock, Paper, or Scissors");
-   let pattern = /^["Rock", "Paper", "Scissors"]/;
-   let result = pattern.test(playerSelectionOptions) || !playerSelectionOptions;
-    if (result) {
-        return(roundOne);
-    }
-    else if (result !== pattern) {
-        return("You did not enter Rock, Paper, or Scissors!");
-    }
-}
-
-
-
-let playerSelection = getPlayerChoice; rock, paper, or scissors 
-let computerSelection = getComputerChoice; rock, paper, or scissors 
-console.log(roundOne(playerSelection, computerSelection))
-*/
